@@ -11,7 +11,7 @@ http.createServer(function(request, response){
       response.write('Page was not found');
       response.end();
     } else {
-      response.writeHead(200, {'Content-Type': 'text/plain'})
+      response.writeHead(200);
       response.write(data);
       response.end();
     }
